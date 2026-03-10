@@ -1,0 +1,30 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# vsim.wlf opened as dataset "vsim"
+# add wave vsim:/test_bench/*
+#  radix -decimal
+# decimal
+# 
+# stdin: <EOF>
+view -new wave
+# .main_pane.wave1.interior.cs.body.pw.wf
+add wave -position insertpoint vsim:/test_bench/u_dut/u_regset/*
+# Can't move the Now cursor.
+view -new wave
+# .main_pane.wave2.interior.cs.body.pw.wf
+add wave -position insertpoint vsim:/test_bench/u_dut/u_cnt_ctrl/*
+view -new wave
+# .main_pane.wave3.interior.cs.body.pw.wf
+add wave -position insertpoint vsim:/test_bench/u_dut/u_cnt/*
